@@ -1,0 +1,986 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\simCommunication.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\simCommunication.ico"
+IDR_SIMCOMTYPE          ICON    DISCARDABLE     "res\\simCommunicationDoc.ico"
+IDI_UNIT                ICON    DISCARDABLE     "res\\unit.ico"
+IDI_UNITDISABLE         ICON    DISCARDABLE     "res\\unitdisa.ico"
+IDI_UNITFAULT           ICON    DISCARDABLE     "res\\unitfaul.ico"
+IDI_VAR                 ICON    DISCARDABLE     "res\\var.ico"
+IDI_VARGROUP            ICON    DISCARDABLE     "res\\vargroup.ico"
+IDI_VARGROUPDISABLE     ICON    DISCARDABLE     "res\\ico00001.ico"
+IDR_POWER_NORMAL0       ICON    DISCARDABLE     "res\\idr_powe.ico"
+IDR_POWER_NORMAL1       ICON    DISCARDABLE     "res\\ico00002.ico"
+IDR_POWER_FAIL0         ICON    DISCARDABLE     "res\\ico00003.ico"
+IDR_POWER_FAIL1         ICON    DISCARDABLE     "res\\ico00004.ico"
+IDI_TRAIN_DATA          ICON    DISCARDABLE     "res\\train_da.ico"
+IDI_FAULT_DATA          ICON    DISCARDABLE     "res\\fault_da.ico"
+IDI_FILE                ICON    DISCARDABLE     "res\\file.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP_SYSTEMTRAY MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "INDEXFRAME"
+    BEGIN
+        MENUITEM "打开(&O)",                    ID_SHOW_WINDOW
+        MENUITEM SEPARATOR
+        MENUITEM "关闭(&X)",                    ID_APP_EXIT
+    END
+END
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)"
+    BEGIN
+        MENUITEM "保护配置(&P)",                ID_EDIT_UNIT
+        MENUITEM "读取配置(&L)",                ID_FILE_LOAD
+        MENUITEM "保存配置(&S)",                ID_FILE_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "读取保护定值",                ID_PARAMETER_LOAD
+        MENUITEM "保存保护定值",                ID_PARAMETER_SAVE
+        MENUITEM SEPARATOR
+        MENUITEM "退出(&X)",                    ID_APP_EXIT
+    END
+    POPUP "操作(&O)"
+    BEGIN
+        MENUITEM "进线电压设置",                ID_IN_VOTLAGE
+        MENUITEM "压互补偿设置",                ID_PT_VOTLAGE
+        MENUITEM SEPARATOR
+        MENUITEM "馈线传动",                    ID_TRANSMISSION_FEED
+        MENUITEM "故障传动",                    ID_TRANSMISSION_FAULT
+        MENUITEM SEPARATOR
+        MENUITEM "遥控复归",                    ID_OPERATER_REVERT
+        MENUITEM "遥控合闸",                    ID_OPERATER_ON
+        MENUITEM "遥控分闸",                    ID_OPERATER_OFF
+        MENUITEM SEPARATOR
+        MENUITEM "遥信操作",                    ID_OPERATER_YX
+        MENUITEM "定值操作",                    ID_OPERATER_PARAMETER
+        MENUITEM SEPARATOR
+        MENUITEM "数据清除",                    ID_UNIT_CLEAR
+    END
+    POPUP "查看(&V)"
+    BEGIN
+        MENUITEM "工具栏(&T)",                  ID_VIEW_TOOLBAR
+        MENUITEM "状态栏(&S)",                  ID_VIEW_STATUS_BAR
+    END
+    POPUP "帮助(&H)"
+    BEGIN
+        MENUITEM "关于 VirtualProtection(&A)...", ID_APP_ABOUT
+    END
+END
+
+IDR_POPUP_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "操作(&O)"
+    BEGIN
+        MENUITEM "遥控复归",                    ID_OPERATER_REVERT
+        MENUITEM "遥控合闸",                    ID_OPERATER_ON
+        MENUITEM "遥控分闸",                    ID_OPERATER_OFF
+        MENUITEM SEPARATOR
+        MENUITEM "遥信操作",                    ID_OPERATER_YX
+        MENUITEM "定值操作",                    ID_OPERATER_PARAMETER
+        MENUITEM SEPARATOR
+        MENUITEM "数据清除",                    ID_UNIT_CLEAR
+    END
+END
+
+IDR_POPUP_OPERATER_YX MENU DISCARDABLE 
+BEGIN
+    POPUP "POPUP"
+    BEGIN
+        MENUITEM "遥信操作－置合",              ID_OPERATER_YX_ON
+        MENUITEM "遥信操作－置分",              ID_OPERATER_YX_OFF
+        MENUITEM SEPARATOR
+        MENUITEM "遥信操作－拒动",              ID_OPERATER_YX_LOCK
+        MENUITEM "遥信操作－解除",              ID_OPERATER_YX_UNLOCK
+        MENUITEM SEPARATOR
+        MENUITEM "遥信操作－异常",              ID_OPERATER_YX_ABNORMAL
+        MENUITEM "遥信操作－正常",              ID_OPERATER_YX_NORMAL
+        MENUITEM SEPARATOR
+        MENUITEM "遥信操作－略图",              ID_OPERATER_YX_THUMBNAIL
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL
+    "S",            ID_FILE_SAVE,           VIRTKEY, CONTROL
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY 
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 simCommunication"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "simCommunication 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2014",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_DLG_MESSAGE_BOX DIALOG DISCARDABLE  0, 0, 372, 65
+STYLE DS_SYSMODAL | DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "通讯仿真"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "关闭",IDCANCEL,160,45,50,14
+    CTEXT           "Static",IDC_TITLE,0,5,370,15,SS_CENTERIMAGE
+    CONTROL         "Progress1",IDC_PROGRESS,"msctls_progress32",WS_BORDER,
+                    15,25,340,10
+END
+
+IDD_EDIT_UNIT DIALOG DISCARDABLE  0, 0, 207, 135
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "保护单元"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_UNIT_TYPE,15,20,75,110,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_UNIT_NAME,15,65,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNIT_CT,15,105,25,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_UNIT_PT,65,105,25,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "遥测",IDC_EDIT_YC,110,10,45,14,WS_GROUP
+    PUSHBUTTON      "遥信",IDC_EDIT_YX,110,30,45,14,WS_GROUP
+    PUSHBUTTON      "电度",IDC_EDIT_DD,110,50,45,14,WS_GROUP
+    PUSHBUTTON      "复制",IDC_COPY,160,10,45,14,WS_GROUP
+    PUSHBUTTON      "粘贴",IDC_PASTE,160,30,45,14,WS_GROUP
+    PUSHBUTTON      "替换",IDC_REPLASE,160,50,45,14,WS_GROUP
+    DEFPUSHBUTTON   "确定",IDOK,160,90,45,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,160,110,45,14,WS_GROUP
+    GROUPBOX        "保护类型",IDC_STATIC,5,5,95,40
+    GROUPBOX        "保护名称",IDC_STATIC,5,50,95,35
+    GROUPBOX        "CT变比",IDC_STATIC,5,90,45,35
+    GROUPBOX        "PT变比",IDC_STATIC,55,90,45,35
+END
+
+IDD_EDIT_VAR DIALOG DISCARDABLE  0, 0, 312, 155
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "变量"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,10,185,135
+    EDITTEXT        IDC_VAR_NAME,225,10,75,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_TEXT_FORMAT,225,30,75,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "复制",IDC_COPY,255,50,45,14,WS_GROUP
+    PUSHBUTTON      "粘贴",IDC_PASTE,255,70,45,14,WS_GROUP
+    PUSHBUTTON      "替换",IDC_REPLASE,255,90,45,14,WS_GROUP
+    DEFPUSHBUTTON   "确定",IDOK,255,110,45,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,255,130,45,14,WS_GROUP
+    CTEXT           "名称:",IDC_STATIC,200,10,21,12,SS_CENTERIMAGE
+    CTEXT           "格式:",IDC_STATIC,200,30,21,12,SS_CENTERIMAGE
+END
+
+IDD_OPERATE_UNIT DIALOG DISCARDABLE  0, 0, 257, 225
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "遥信操作"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,10,185,210
+    DEFPUSHBUTTON   "确定",IDOK,205,185,45,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,205,205,45,14,WS_GROUP
+    PUSHBUTTON      "合",IDC_ON,205,10,45,14,WS_GROUP
+    PUSHBUTTON      "分",IDC_OFF,205,30,45,14,WS_GROUP
+END
+
+IDD_PARAMETER_ONOFF DIALOG DISCARDABLE  0, 0, 77, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "压板投退"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "投",IDC_PARAMETER_ON,15,20,45,14,WS_GROUP
+    GROUPBOX        "压板投退",IDC_STATIC,5,5,65,55
+    PUSHBUTTON      "退",IDC_PARAMETER_OFF,15,40,45,14,WS_GROUP
+END
+
+IDD_PARAMETER_INPUT DIALOG DISCARDABLE  0, 0, 132, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定值输入"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_PARAMETER_VALUE,15,21,45,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "确定",IDOK,80,11,45,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,80,31,45,14,WS_GROUP
+    GROUPBOX        "定值输入",IDC_STATIC,5,5,65,40
+END
+
+IDD_OPERATE_PARAMETER DIALOG DISCARDABLE  0, 0, 277, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "定值"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,5,215,230
+    PUSHBUTTON      "0组",IDC_GROUP_0,230,40,35,14,WS_GROUP
+    PUSHBUTTON      "1组",IDC_GROUP_1,230,55,35,14,WS_GROUP
+    PUSHBUTTON      "2组",IDC_GROUP_2,230,70,35,14,WS_GROUP
+    PUSHBUTTON      "3组",IDC_GROUP_3,230,85,35,14,WS_GROUP
+    PUSHBUTTON      "设置",IDC_SET,225,115,45,14,WS_GROUP
+    PUSHBUTTON      "复制",IDC_COPY,225,135,45,14,WS_GROUP
+    PUSHBUTTON      "粘贴",IDC_PASTE,225,155,45,14,WS_GROUP
+    PUSHBUTTON      "召唤",IDC_CALL,225,175,45,14,WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "下装",IDC_SEND,225,195,45,14,WS_DISABLED | WS_GROUP
+    PUSHBUTTON      "关闭",IDCANCEL,225,220,45,14,WS_GROUP
+    GROUPBOX        "定值组号",IDC_STATIC,225,5,45,100
+    CTEXT           "0",IDC_GROUP_ID,230,20,35,15,SS_CENTERIMAGE | SS_SUNKEN
+END
+
+IDD_DLG_LIST_SELECT DIALOG DISCARDABLE  0, 0, 377, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "列表选择"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确认",IDOK,320,145,50,15
+    PUSHBUTTON      "取消",IDCANCEL,320,165,50,15
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,5,310,175
+END
+
+IDD_SCENE_PICTURE DIALOG DISCARDABLE  0, 0, 407, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "场景图示"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,10,10,200,155
+    PUSHBUTTON      "操作",IDC_OPERATE_OFF,220,150,85,14,WS_GROUP
+    PUSHBUTTON      "操作",IDC_OPERATE_ON,315,150,85,14,WS_GROUP
+    PUSHBUTTON      "确认",IDC_CONFIRM_OFF,220,150,85,14,WS_GROUP
+    PUSHBUTTON      "确认",IDC_CONFIRM_ON,315,150,85,14,WS_GROUP
+    LTEXT           "",IDC_PICTURE_OFF,220,60,85,75,SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "分",IDC_TEXT_OFF,220,30,85,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "合",IDC_TEXT_ON,316,30,85,15,SS_CENTERIMAGE | SS_SUNKEN
+    LTEXT           "",IDC_PICTURE_ON,315,60,85,75,SS_SUNKEN | NOT WS_GROUP
+    CTEXT           "提示",IDC_SCENE_PROMPT,220,10,180,15,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+END
+
+IDD_DLG_SCENE_FILE_SELECT DIALOG DISCARDABLE  0, 0, 377, 189
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "场景文件"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "确定",IDC_SATRTUP,320,145,50,15
+    PUSHBUTTON      "关闭",IDCANCEL,320,165,50,15
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,5,310,175
+END
+
+IDD_DLG_FAULT_TRANSMISSION DIALOG DISCARDABLE  0, 0, 312, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "故障传动"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,260,30,45,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,260,50,45,14,WS_GROUP
+    EDITTEXT        IDC_FILENAME,55,10,200,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "文件选择",IDC_FILE_SELECT,260,10,45,14
+    EDITTEXT        IDC_EDIT_STARTUP_DELAY_SECOND,55,30,41,12,ES_AUTOHSCROLL
+    LTEXT           "数据文件：",IDC_STATIC,10,10,41,12,SS_CENTERIMAGE
+    LTEXT           "启动时间：",IDC_STATIC,10,30,40,14,SS_CENTERIMAGE
+    CTEXT           "(秒)",IDC_STATIC,100,30,15,14,SS_CENTERIMAGE
+END
+
+IDD_DLG_PT_VOLTAGE DIALOG DISCARDABLE  0, 0, 317, 199
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "压互补偿设置"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_1T_HI_VOLTAGE_VALUEK,60,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_1T_LO_VOLTAGE_VALUEK,105,45,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_1T_HI_CURRENT_MAX_VALUE,61,65,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_1T_LO_CURRENT_MAX_VALUE,105,65,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_2T_HI_VOLTAGE_VALUEK,61,141,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_2T_LO_VOLTAGE_VALUEK,106,141,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_2T_HI_CURRENT_MAX_VALUE,61,161,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_2T_LO_CURRENT_MAX_VALUE,106,161,40,14,
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "确定",IDOK,260,155,50,14
+    PUSHBUTTON      "取消",IDCANCEL,260,175,50,14
+    LTEXT           "电压系数：",IDC_STATIC,15,45,40,14,SS_CENTERIMAGE
+    LTEXT           "最大电流：",IDC_STATIC,15,65,40,14,SS_CENTERIMAGE
+    CTEXT           "高压侧",IDC_STATIC,60,25,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "低压侧",IDC_STATIC,105,25,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "高压侧",IDC_STATIC,61,121,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    CTEXT           "低压侧",IDC_STATIC,107,121,40,14,SS_CENTERIMAGE | 
+                    SS_SUNKEN
+    LTEXT           "电压系数：",IDC_STATIC,15,141,40,14,SS_CENTERIMAGE
+    LTEXT           "最大电流：",IDC_STATIC,15,161,40,14,SS_CENTERIMAGE
+    GROUPBOX        "1#主变",IDC_STATIC,10,10,240,85
+    GROUPBOX        "2#主变",IDC_STATIC,10,105,240,85
+    EDITTEXT        IDC_EDIT_1T_GEAR,200,25,40,14,ES_AUTOHSCROLL
+    LTEXT           "主变档位：",IDC_STATIC,155,25,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_1T_TEMP_1,200,45,40,14,ES_AUTOHSCROLL
+    LTEXT           "主变油温1：",IDC_STATIC,155,45,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_1T_TEMP_2,200,65,40,14,ES_AUTOHSCROLL
+    LTEXT           "主变油温2：",IDC_STATIC,155,65,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_2T_GEAR,200,121,40,14,ES_AUTOHSCROLL
+    LTEXT           "主变档位：",IDC_STATIC,155,121,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_2T_TEMP_1,200,141,40,14,ES_AUTOHSCROLL
+    LTEXT           "主变油温1：",IDC_STATIC,155,141,40,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_2T_TEMP_2,200,161,40,14,ES_AUTOHSCROLL
+    LTEXT           "主变油温2：",IDC_STATIC,155,161,40,14,SS_CENTERIMAGE
+END
+
+IDD_DLG_FREE_TRANSMISSION_LIST DIALOG DISCARDABLE  0, 0, 442, 245
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "馈线传动管理"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,5,375,230
+    PUSHBUTTON      "新建",IDC_NEW,390,5,45,14,WS_GROUP
+    PUSHBUTTON      "编辑",IDC_EDIT,390,25,45,14,WS_GROUP
+    PUSHBUTTON      "克隆",IDC_CLON,390,45,45,14,WS_GROUP
+    PUSHBUTTON      "删除",IDC_DEL,390,65,45,14,WS_GROUP
+    PUSHBUTTON      "读取",IDC_LOAD,390,85,45,14,WS_GROUP
+    PUSHBUTTON      "保存",IDC_SAVE,390,105,45,14,WS_GROUP
+    PUSHBUTTON      "启动",IDC_STARTUP,390,200,45,14,WS_GROUP
+    PUSHBUTTON      "关闭",IDCANCEL,390,220,45,14,WS_GROUP
+END
+
+IDD_DLG_POWER_MONITOR DIALOG DISCARDABLE  0, 0, 517, 239
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "负荷监视"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "List1",IDC_TRANSMISSION_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,5,5,355,225
+    CONTROL         "List1",IDC_FEED_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SINGLESEL | LVS_SHOWSELALWAYS | WS_BORDER | 
+                    WS_TABSTOP,365,5,90,225
+    PUSHBUTTON      "负荷清除",IDC_CLEAR,465,5,45,14,WS_GROUP
+    PUSHBUTTON      "关闭",IDCANCEL,465,215,45,14,WS_GROUP
+END
+
+IDD_DLG_FREE_TRANSMISSION DIALOG DISCARDABLE  0, 0, 267, 165
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "馈线传动"
+FONT 9, "宋体"
+BEGIN
+    EDITTEXT        IDC_EDIT_AVER_CURRENT,55,65,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_AVER_ANGLE,55,85,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FREE_TRANSMISSION_CONTINUED_SECONDS,55,105,41,
+                    12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FREE_TRANSMISSION_CURRENT_CHANGE_RATE,55,125,41,
+                    12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_FREE_TRANSMISSION_STARTUP_DELAY_SECOND,55,145,
+                    41,12,ES_AUTOHSCROLL
+    LTEXT           "馈线名称：",IDC_STATIC,10,10,41,12,SS_CENTERIMAGE
+    LTEXT           "传动电流：",IDC_STATIC,10,65,41,12,SS_CENTERIMAGE
+    LTEXT           "电流相位：",IDC_STATIC,10,85,41,12,SS_CENTERIMAGE
+    LTEXT           "启动时间：",IDC_STATIC,10,145,40,14,SS_CENTERIMAGE
+    CTEXT           "(秒)",IDC_STATIC,100,145,15,14,SS_CENTERIMAGE
+    LTEXT           "电流抖动：",IDC_STATIC,10,125,41,12,SS_CENTERIMAGE
+    CTEXT           "(%)",IDC_STATIC,100,127,15,12,SS_CENTERIMAGE
+    CTEXT           "(A)",IDC_STATIC,100,65,15,12,SS_CENTERIMAGE
+    CTEXT           "(度)",IDC_STATIC,100,85,15,12,SS_CENTERIMAGE
+    LTEXT           "持续时间：",IDC_STATIC,10,105,40,14,SS_CENTERIMAGE
+    CTEXT           "(秒)",IDC_STATIC,100,105,15,14,SS_CENTERIMAGE
+    CTEXT           "传动电流变化率",IDC_STATIC,130,10,70,12,SS_CENTERIMAGE
+    DEFPUSHBUTTON   "确定",IDOK,210,120,45,14,WS_GROUP
+    PUSHBUTTON      "取消",IDCANCEL,210,140,45,14,WS_GROUP
+    COMBOBOX        IDC_EDIT_FEED_NAME,55,10,55,235,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "设置",IDC_SET,210,25,45,14,WS_GROUP
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,130,25,70,130
+END
+
+IDD_DLG_CURRENT_DISTRIBUTION DIALOGEX 0, 0, 677, 215
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "电流分布"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    CONTROL         "List1",IDC_LIST,"SysListView32",LVS_REPORT | 
+                    LVS_SHOWSELALWAYS | WS_BORDER | WS_TABSTOP,545,5,70,200
+    EDITTEXT        IDC_EDIT_VALUE,620,5,50,14,ES_AUTOHSCROLL | ES_NUMBER
+    PUSHBUTTON      "设置",IDC_SET_VALUE,620,25,50,14
+    PUSHBUTTON      "趋势",IDC_SET_VALUE1,620,45,50,14
+    PUSHBUTTON      "增加",IDC_SET_VALUE2,620,65,50,14
+    PUSHBUTTON      "减少",IDC_SET_VALUE3,620,85,50,14
+    DEFPUSHBUTTON   "确定",IDOK,620,175,50,14
+    PUSHBUTTON      "取消",IDCANCEL,620,191,50,14
+END
+
+IDD_DLG_INLINE_VOTLAGE DIALOG DISCARDABLE  0, 0, 342, 279
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "进线电压设置"
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "确定",IDOK,285,235,50,14
+    PUSHBUTTON      "取消",IDCANCEL,285,255,50,14
+    EDITTEXT        IDC_EDIT_UA1,65,25,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UB1,65,45,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UC1,65,65,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ａ相正常",IDC_NORMAL_UA1,130,25,45,14
+    PUSHBUTTON      "Ｂ相正常",IDC_NORMAL_UB1,130,45,45,14
+    PUSHBUTTON      "Ｃ相正常",IDC_NORMAL_UC1,130,65,45,14
+    PUSHBUTTON      "Ａ相失压",IDC_LOST_UA1,180,25,45,14
+    PUSHBUTTON      "Ｂ相失压",IDC_LOST_UB1,180,45,45,14
+    PUSHBUTTON      "Ｃ相失压",IDC_LOST_UC1,180,65,45,14
+    PUSHBUTTON      "Ａ相欠压",IDC_LOW_UA1,230,25,45,14
+    PUSHBUTTON      "Ｂ相欠压",IDC_LOW_UB1,230,45,45,14
+    PUSHBUTTON      "Ｃ相欠压",IDC_LOW_UC1,230,65,45,14
+    EDITTEXT        IDC_EDIT_UA2,65,105,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UB2,65,125,40,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_UC2,65,145,40,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "Ａ相正常",IDC_NORMAL_UA2,130,105,45,14
+    PUSHBUTTON      "Ｂ相正常",IDC_NORMAL_UB2,130,125,45,14
+    PUSHBUTTON      "Ｃ相正常",IDC_NORMAL_UC2,130,145,45,14
+    PUSHBUTTON      "Ａ相失压",IDC_LOST_UA2,180,105,45,14
+    PUSHBUTTON      "Ｂ相失压",IDC_LOST_UB2,180,125,45,14
+    PUSHBUTTON      "Ｃ相失压",IDC_LOST_UC2,180,145,45,14
+    PUSHBUTTON      "Ａ相欠压",IDC_LOW_UA2,230,105,45,14
+    PUSHBUTTON      "Ｂ相欠压",IDC_LOW_UB2,230,125,45,14
+    PUSHBUTTON      "Ｃ相欠压",IDC_LOW_UC2,230,145,45,14
+    EDITTEXT        IDC_EDIT_1T_HI_VOLTAGE_CHANGE_RATE,65,195,40,14,
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_2T_HI_VOLTAGE_CHANGE_RATE,65,235,40,14,
+                    ES_AUTOHSCROLL
+    LTEXT           "Ａ相电压：",IDC_STATIC,20,25,40,14,SS_CENTERIMAGE
+    LTEXT           "Ｂ相电压：",IDC_STATIC,20,45,40,14,SS_CENTERIMAGE
+    LTEXT           "Ｃ相电压：",IDC_STATIC,20,65,40,14,SS_CENTERIMAGE
+    GROUPBOX        "1#进线",IDC_STATIC,10,10,270,75
+    LTEXT           "Ａ相电压：",IDC_STATIC,20,105,40,14,SS_CENTERIMAGE
+    LTEXT           "Ｂ相电压：",IDC_STATIC,20,125,40,14,SS_CENTERIMAGE
+    LTEXT           "Ｃ相电压：",IDC_STATIC,20,145,40,14,SS_CENTERIMAGE
+    GROUPBOX        "2#进线",IDC_STATIC,10,90,270,75
+    GROUPBOX        "电压抖动",IDC_STATIC,10,170,270,100
+    CTEXT           "(%)",IDC_STATIC,110,195,15,14,SS_CENTERIMAGE
+    LTEXT           "1T高压侧：",IDC_STATIC,20,195,40,14,SS_CENTERIMAGE
+    LTEXT           "2T高压侧：",IDC_STATIC,20,235,40,14,SS_CENTERIMAGE
+    CTEXT           "(%)",IDC_STATIC,110,235,15,14,SS_CENTERIMAGE
+    LTEXT           "1T低压侧：",IDC_STATIC,130,195,35,14,SS_CENTERIMAGE
+    LTEXT           "2T低压侧：",IDC_STATIC,130,235,35,14,SS_CENTERIMAGE
+    CTEXT           "(kV)",IDC_STATIC,110,25,15,14,SS_CENTERIMAGE
+    CTEXT           "(kV)",IDC_STATIC,110,45,15,14,SS_CENTERIMAGE
+    CTEXT           "(kV)",IDC_STATIC,110,65,15,14,SS_CENTERIMAGE
+    CTEXT           "(kV)",IDC_STATIC,110,105,15,14,SS_CENTERIMAGE
+    CTEXT           "(kV)",IDC_STATIC,110,125,15,14,SS_CENTERIMAGE
+    CTEXT           "(kV)",IDC_STATIC,110,145,15,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_1T_LO_VOLTAGE_CHANGE_RATE,170,195,40,14,
+                    ES_AUTOHSCROLL
+    CTEXT           "(%)",IDC_STATIC,215,195,15,14,SS_CENTERIMAGE
+    EDITTEXT        IDC_EDIT_2T_LO_VOLTAGE_CHANGE_RATE,170,235,40,14,
+                    ES_AUTOHSCROLL
+    CTEXT           "(%)",IDC_STATIC,215,235,15,14,SS_CENTERIMAGE
+END
+
+IDD_DLG_POWER_THUMBNAIL DIALOG DISCARDABLE  0, 0, 602, 409
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "供电略图"
+FONT 9, "宋体"
+BEGIN
+    CONTROL         "",IDC_WND,"Static",SS_WHITERECT,5,5,530,400
+    PUSHBUTTON      "导入",IDC_IMPORT,545,5,50,15
+    PUSHBUTTON      "导出",IDC_EXPORT,545,25,50,15
+    PUSHBUTTON      "关闭",IDCANCEL,545,390,50,15
+END
+
+IDD_DLG_REPLACE DIALOG DISCARDABLE  0, 0, 252, 95
+STYLE DS_MODALFRAME | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "替换"
+FONT 9, "宋体"
+BEGIN
+    COMBOBOX        IDC_EDIT_OLD,35,5,215,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_EDIT_NEW,35,25,215,200,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    DEFPUSHBUTTON   "确定",IDOK,195,50,50,14
+    PUSHBUTTON      "取消",IDCANCEL,195,70,50,14
+    LTEXT           "原字串:",IDC_STATIC,5,7,29,8
+    LTEXT           "替换为:",IDC_STATIC,5,27,29,8
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "simCommunication Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "simCommunication\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2014\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "simCommunication.EXE\0"
+            VALUE "ProductName", "simCommunication 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_DLG_MESSAGE_BOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 365
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 58
+    END
+
+    IDD_EDIT_UNIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 200
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 128
+    END
+
+    IDD_EDIT_VAR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 305
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 148
+    END
+
+    IDD_OPERATE_UNIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 250
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 218
+    END
+
+    IDD_PARAMETER_ONOFF, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 70
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_PARAMETER_INPUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 125
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_OPERATE_PARAMETER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 270
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DLG_LIST_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_SCENE_PICTURE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 400
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_DLG_SCENE_FILE_SELECT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 370
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 182
+    END
+
+    IDD_DLG_PT_VOLTAGE, DIALOG
+    BEGIN
+        RIGHTMARGIN, 257
+    END
+
+    IDD_DLG_FREE_TRANSMISSION_LIST, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 435
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 238
+    END
+
+    IDD_DLG_POWER_MONITOR, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 510
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 232
+    END
+
+    IDD_DLG_CURRENT_DISTRIBUTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 670
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 208
+    END
+
+    IDD_DLG_INLINE_VOTLAGE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 335
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 272
+    END
+
+    IDD_DLG_POWER_THUMBNAIL, DIALOG
+    BEGIN
+        RIGHTMARGIN, 522
+    END
+
+    IDD_DLG_REPLACE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 245
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 88
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  64, 15
+BEGIN
+    BUTTON      ID_EDIT_UNIT
+    SEPARATOR
+    BUTTON      ID_SCENE_OPERATE
+    SEPARATOR
+    BUTTON      ID_TRANSMISSION_FEED
+    BUTTON      ID_TRANSMISSION_FAULT
+    SEPARATOR
+    BUTTON      ID_POWER_MONITOR
+    BUTTON      ID_POWER_CLEAR
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+PUSH                    CURSOR  DISCARDABLE     "res\\PUSH.CUR"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "simCommunication\n\nSimCom\n\n\nSimCommunication.Document\nSimCom Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "simCommunication"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\simCommunication.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

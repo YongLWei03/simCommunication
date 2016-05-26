@@ -1,0 +1,104 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: simCommunication - Win32 Release--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\WORK\LOCALS~1\Temp\RSP1A.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:no /pdb:"Release/simCommunication.pdb" /machine:I386 /out:"C:\simPower2000\昆明北站主变电站仿真系统\simCommunication.exe" 
+".\Release\CommThread.obj"
+".\Release\DataExchangeSocket.obj"
+".\Release\DlgCurrentDistribution.obj"
+".\Release\DlgEditVar.obj"
+".\Release\DlgFaultTransmission.obj"
+".\Release\DlgFreeTransmission.obj"
+".\Release\DlgFreeTransmissionList.obj"
+".\Release\DlgInlineVotlage.obj"
+".\Release\DlgListSelect.obj"
+".\Release\DlgMessageBox.obj"
+".\Release\DlgOperateParameter.obj"
+".\Release\DlgOperateUnit.obj"
+".\Release\DLgParameterInput.obj"
+".\Release\DlgParameterOnOff.obj"
+".\Release\DlgPowerMonitor.obj"
+".\Release\DlgPowerThumbnail.obj"
+".\Release\DlgPTVotlage.obj"
+".\Release\DlgReplace.obj"
+".\Release\DlgSceneFileSelect.obj"
+".\Release\DlgUnitEdit.obj"
+".\Release\global.obj"
+".\Release\MainFrm.obj"
+".\Release\NewComputer.obj"
+".\Release\NewProtection.obj"
+".\Release\NewSocket.obj"
+".\Release\NewString.obj"
+".\Release\PowerThread.obj"
+".\Release\ProtectionCalculater.obj"
+".\Release\ProtocolTH104.obj"
+".\Release\simCommunication.obj"
+".\Release\simCommunicationSOEListView.obj"
+".\Release\simCommunicationUnitListView.obj"
+".\Release\simCommunicationVarListView.obj"
+".\Release\Sortclass.obj"
+".\Release\StdAfx.obj"
+".\Release\Systemtray.obj"
+".\Release\simCommunication.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\WORK\LOCALS~1\Temp\RSP1A.tmp"
+<h3>Output Window</h3>
+Linking...
+LINK : warning LNK4089: all references to "OLEPRO32.DLL" discarded by /OPT:REF
+LINK : warning LNK4089: all references to "ole32.dll" discarded by /OPT:REF
+Creating temporary file "C:\DOCUME~1\WORK\LOCALS~1\Temp\RSP1C.tmp" with contents
+[
+/nologo /o"Release/simCommunication.bsc" 
+".\Release\StdAfx.sbr"
+".\Release\CommThread.sbr"
+".\Release\DataExchangeSocket.sbr"
+".\Release\DlgCurrentDistribution.sbr"
+".\Release\DlgEditVar.sbr"
+".\Release\DlgFaultTransmission.sbr"
+".\Release\DlgFreeTransmission.sbr"
+".\Release\DlgFreeTransmissionList.sbr"
+".\Release\DlgInlineVotlage.sbr"
+".\Release\DlgListSelect.sbr"
+".\Release\DlgMessageBox.sbr"
+".\Release\DlgOperateParameter.sbr"
+".\Release\DlgOperateUnit.sbr"
+".\Release\DLgParameterInput.sbr"
+".\Release\DlgParameterOnOff.sbr"
+".\Release\DlgPowerMonitor.sbr"
+".\Release\DlgPowerThumbnail.sbr"
+".\Release\DlgPTVotlage.sbr"
+".\Release\DlgReplace.sbr"
+".\Release\DlgSceneFileSelect.sbr"
+".\Release\DlgUnitEdit.sbr"
+".\Release\global.sbr"
+".\Release\MainFrm.sbr"
+".\Release\NewComputer.sbr"
+".\Release\NewProtection.sbr"
+".\Release\NewSocket.sbr"
+".\Release\NewString.sbr"
+".\Release\PowerThread.sbr"
+".\Release\ProtectionCalculater.sbr"
+".\Release\ProtocolTH104.sbr"
+".\Release\simCommunication.sbr"
+".\Release\simCommunicationSOEListView.sbr"
+".\Release\simCommunicationUnitListView.sbr"
+".\Release\simCommunicationVarListView.sbr"
+".\Release\Sortclass.sbr"
+".\Release\Systemtray.sbr"]
+Creating command line "bscmake.exe @C:\DOCUME~1\WORK\LOCALS~1\Temp\RSP1C.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+simCommunication.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>
